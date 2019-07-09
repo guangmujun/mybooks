@@ -1,0 +1,451 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Pyinstaller打包程序 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../part1_other/" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">简介</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    老王干啥了
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">学习杂记</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Python学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.1.1" data-path="pyinstaller.html">
+            
+                <a href="pyinstaller.html">
+            
+                    
+                    Pyinstaller打包程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../part1_other/">
+            
+                <a href="../part1_other/">
+            
+                    
+                    其他学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../part1_other/gitbook.html">
+            
+                <a href="../part1_other/gitbook.html">
+            
+                    
+                    GitBook使用教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">系统学习</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../part2_ml/">
+            
+                <a href="../part2_ml/">
+            
+                    
+                    ML
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../part2_ml/cook.html">
+            
+                <a href="../part2_ml/cook.html">
+            
+                    
+                    待开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Pyinstaller打包程序</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="pyinstaller&#x5C06;python&#x7A0B;&#x5E8F;&#x6253;&#x5305;&#x6210;exe">Pyinstaller&#x5C06;Python&#x7A0B;&#x5E8F;&#x6253;&#x5305;&#x6210;EXE</h1>
+<h2 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h2>
+<pre><code>pip install pyinstaller
+</code></pre><h2 id="&#x6574;&#x4F53;&#x6D41;&#x7A0B;">&#x6574;&#x4F53;&#x6D41;&#x7A0B;</h2>
+<pre><code>pyi-makespec xxx.py     # &#x5148;&#x751F;&#x6210;spec&#x6587;&#x4EF6;
+pyinstaller xxx.spec    # &#x518D;&#x751F;&#x6210;exe&#x6587;&#x4EF6;
+</code></pre><h2 id="&#x53C2;&#x6570;&#x8BF4;&#x660E;">&#x53C2;&#x6570;&#x8BF4;&#x660E;</h2>
+<p><code>-F</code>  &#xFF1A;&#x6253;&#x5305;&#x6210;&#x4E00;&#x4E2A;exe&#x6587;&#x4EF6;&#xFF08;&#x5728;dist&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#xFF09;</p>
+<pre><code>pyi-makespec -F xxx.py
+pyinstaller xxx.spec
+</code></pre><p><code>-D</code>  &#xFF1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5305;&#x542B;exe&#x7684;&#x6587;&#x4EF6;&#x5939;</p>
+<pre><code>pyi-makespec -D xxx.py
+pyinstaller xxx.spec
+</code></pre><h2 id="&#x5355;&#x4E00;py&#x6587;&#x4EF6;">&#x5355;&#x4E00;PY&#x6587;&#x4EF6;</h2>
+<p>&#x6309;&#x4E0A;&#x8FF0;&#x64CD;&#x4F5C;&#x5373;&#x53EF;</p>
+<h2 id="&#x5305;&#x542B;&#x6570;&#x636E;&#x6587;&#x4EF6;">&#x5305;&#x542B;&#x6570;&#x636E;&#x6587;&#x4EF6;</h2>
+<p>&#x7528;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x6253;&#x5F00;spec&#x6587;&#x4EF6;&#xFF0C;&#x4FEE;&#x6539;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x53C2;&#x6570; <code>datas=[]</code></p>
+<p>&#x4F8B;&#x5982;&#x8981;&#x6253;&#x5305; <code>global_popu.tif</code> &#x5230;exe&#x4E2D;&#x65F6;</p>
+<ol>
+<li><p>pec&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x4FEE;&#x6539;&#x4E3A;<code>datas=[(&apos;global_popu.tif&apos;, &apos;.&apos;)]</code></p>
+</li>
+<li><p>&#x7136;&#x540E;&#x5C06;spec&#x6587;&#x4EF6;&#x7F16;&#x8BD1;&#x6210;exe&#xFF0C;&#x4E24;&#x70B9;&#x6CE8;&#x610F;&#xFF1A;</p>
+<ol>
+<li>&#x5C06;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x548C;xxx.py&#x6587;&#x4EF6;&#x653E;&#x5728;&#x540C;&#x4E00;&#x76EE;&#x5F55; </li>
+<li>&#x5BF9;xxx.py&#x7A0B;&#x5E8F;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x7684;&#x90E8;&#x5206;&#x9700;&#x8981;&#x4FEE;&#x6539;&#xFF0C;&#x4FEE;&#x6539;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;</li>
+</ol>
+</li>
+</ol>
+<pre><code>a = Analysis([&apos;trip_popu.py&apos;],
+             pathex=[&apos;E:\\GitHub\\Zone\\Zone&apos;],
+             binaries=[],
+             datas=[(&apos;global_popu.tif&apos;, &apos;.&apos;)],
+             hiddenimports=[],
+             hookspath=[],
+             runtime_hooks=[],
+             excludes=[],
+             win_no_prefer_redirects=False,
+             win_private_assemblies=False,
+             cipher=block_cipher,
+             noarchive=False)
+</code></pre><pre><code># &#x5BF9;xxx.py&#x7684;&#x4FEE;&#x6539;
+# &#x6DFB;&#x52A0;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x51FD;&#x6570;
+def resource_path(relative_path):    
+    base_path = getattr(        
+        sys, &apos;_MEIPASS&apos;, os.path.dirname(            
+            os.path.abspath(__file__)))    
+    return os.path.join(base_path, relative_path)
+
+#global_popu_Dic = resource_path(&quot;global_popu.tif&quot;)  # &#x6253;&#x5305;&#x65F6;&#x4F7F;&#x7528;
+global_popu_Dic = &quot;../data/global_popu.tif&quot;            # &#x8C03;&#x8BD5;&#x65F6;&#x4F7F;&#x7528;
+</code></pre><p>&#x5982;&#x679C;&#x8981;&#x6253;&#x5305;&#x4E24;&#x4E2A;&#x6216;&#x8005;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x6587;&#x4EF6;&#xFF0C;&#x5219;&#x5BF9;spec&#x4E2D;&#x7684;<code>datas</code> &#x4FEE;&#x6539;&#x53C2;&#x8003;&#x4E0B;&#x4F8B;&#xFF1A;</p>
+<p><code>datas=[(&apos;china_light_2016.tif&apos;, &apos;.&apos;),(&apos;china_population_2016.tif&apos;, &apos;.&apos;)]</code></p>
+<h2 id="&#x591A;&#x4E2A;py&#x6587;&#x4EF6;">&#x591A;&#x4E2A;PY&#x6587;&#x4EF6;</h2>
+<p>&#x6574;&#x4F53;&#x64CD;&#x4F5C;&#x4E0E;&#x4E0A;&#x8FF0;&#x7C7B;&#x4F3C;&#xFF0C;&#x5173;&#x952E;&#x5728;&#x4E8E;&#x4FEE;&#x6539;spec&#x4E2D;&#x7684;&#x53C2;&#x6570;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;code&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7684;trip_popu.py&#x7528;&#x5230;&#x4E86;zone_func&#x6587;&#x4EF6;&#x5939;&#x76EE;&#x5F55;&#x4E0B;&#x7684;func.py&#x6587;&#x4EF6;&#xFF0C;</p>
+<p>&#x5728;spec&#x6587;&#x4EF6;&#x4E2D;&#x7684;<code>Analysis</code>&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4E2D;&#x52A0;&#x4E0A;func.py&#x6587;&#x4EF6;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x7136;&#x540E;&#x751F;&#x6210;exe&#x5373;&#x53EF;</p>
+<pre><code>a = Analysis([&apos;trip_popu.py&apos;,&apos;E:\\GitHub\\Zone\\Zone\\zone_func\\func.py&apos;],
+             pathex=[&apos;E:\\GitHub\\Zone\\Zone&apos;],
+             binaries=[],
+             datas=[(&apos;global_popu.tif&apos;, &apos;.&apos;)],
+             hiddenimports=[],
+             hookspath=[],
+             runtime_hooks=[],
+             excludes=[],
+             win_no_prefer_redirects=False,
+             win_private_assemblies=False,
+             cipher=block_cipher,
+             noarchive=False)
+</code></pre><h2 id="&#x591A;&#x8FDB;&#x7A0B;&#x6253;&#x5305;">&#x591A;&#x8FDB;&#x7A0B;&#x6253;&#x5305;</h2>
+<p>&#x7F16;&#x5199;&#x7684;&#x7A0B;&#x5E8F;&#x4E2D;&#x5305;&#x542B;&#x591A;&#x8FDB;&#x7A0B;&#x5904;&#x7406;&#x65F6;&#xFF0C;&#x6B63;&#x5E38;&#x6253;&#x5305;&#x8FD0;&#x884C;exe&#x540E;&#xFF0C;&#x7535;&#x8111;&#x4F1A;&#x5361;&#x6B7B;</p>
+<p>&#x6240;&#x4EE5;&#x5728;&#x6253;&#x5305;&#x524D;&#xFF0C;&#x9700;&#x5148;&#x8981;&#x5BF9;xxx.py&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x4FEE;&#x6539;&#x5185;&#x5BB9;&#x4E3A;&#xFF1A;</p>
+<pre><code>import multiprocessing
+
+if __name__ == &quot;__main__&quot;:
+    multiprocessing.freeze_support()    # &#x8FD9;&#x4E00;&#x53E5;&#x4E00;&#x5B9A;&#x8981;&#x653E;&#x5728;if __name__ == &quot;__main__&quot;:&#x4E0B;&#x9762;
+</code></pre><p>&#x4FEE;&#x6539;&#x540E;&#xFF0C;&#x6B63;&#x5E38;&#x6253;&#x5305;&#x5373;&#x53EF;</p>
+<h2 id="&#x95EE;&#x9898;&#x8BB0;&#x5F55;">&#x95EE;&#x9898;&#x8BB0;&#x5F55;</h2>
+<ol>
+<li><p>&#x7A0B;&#x5E8F;&#x6709;&#x4F7F;&#x7528;&#x5230;shapely&#x5E93;,&#x6253;&#x5305;&#x65F6;&#x4F1A;&#x63D0;&#x793A;<strong>&#x7F3A;&#x5C11;geos.dll</strong></p>
+<p>&#x5C06;&#x63D0;&#x793A;&#x7684;shapely&#x5E93;&#x7684;&#x8DEF;&#x5F84;&#x4E0B;&#x7684;geos_c.dll&#x590D;&#x5236;&#x4E00;&#x4EFD;&#x91CD;&#x547D;&#x540D;&#x4E3A;geos.dll,&#x91CD;&#x65B0;&#x6253;&#x5305;&#x5373;&#x53EF;</p>
+</li>
+<li><p>&#x7A0B;&#x5E8F;&#x6709;&#x4F7F;&#x7528;&#x5230;geopandas&#x5E93;,&#x6253;&#x5305;&#x65F6;&#x8FD0;&#x884C;&#x540E;&#x63D0;&#x793A;</p>
+<pre><code>File &quot;site-packages\geopandas\datasets\__init__.py&quot;, line 7, in &lt;module&gt;
+StopIteration
+[6764] Failed to execute script application
+</code></pre><p>&#x627E;&#x5230;geopandas&#x5E93;&#x6587;&#x4EF6;&#x4E0B;&#x7684;<code>__init__.py</code>,&#x5C06;<code>import geopandas.datasets</code>&#x8FD9;&#x53E5;&#x6CE8;&#x91CA;&#x6389;</p>
+</li>
+<li><p>&#x7A0B;&#x5E8F;&#x6709;&#x4F7F;&#x7528;&#x5230;sklearn&#x5E93;&#x65F6;,&#x6253;&#x5305;&#x8FD0;&#x884C;&#x65F6;&#x63D0;&#x793A;&#x7F3A;&#x5C11;&#x4E00;&#x4E9B;&#x6A21;&#x5757;,&#x5982;<code>sklearn.utils._cython_blas</code></p>
+<p>&#x4FEE;&#x6539;spec&#x6587;&#x4EF6;&#x4E2D;&#x7684;<code>hiddenimports</code>&#x53C2;&#x6570;&#x540E;,&#x91CD;&#x65B0;&#x6253;&#x5305;,&#x4FEE;&#x6539;&#x5982;&#x4E0B;</p>
+<pre><code>a = Analysis([&apos;mainarea_buffer.py&apos;,&apos;E:\\GitHub\\Zone\\Zone\\zone_func\\func.py&apos;],
+             pathex=[&apos;E:\\GitHub\\Zone\\Zone&apos;],
+             binaries=[],
+             datas=[(&apos;global_popu.tif&apos;, &apos;.&apos;)],
+             hiddenimports=[&apos;sklearn.utils._cython_blas&apos;,&apos;cython&apos;, &apos;sklearn&apos;, &apos;sklearn.ensemble&apos;,&apos;sklearn.neighbors.typedefs&apos;,&apos;sklearn.neighbors.quad_tree&apos;,&apos;sklearn.tree._utils&apos;,&apos;scipy._lib.messagestream&apos;],
+             hookspath=[],
+             runtime_hooks=[],
+             excludes=[],
+             win_no_prefer_redirects=False,
+             win_private_assemblies=False,
+             cipher=block_cipher,
+             noarchive=False)
+</code></pre><h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
+</li>
+</ol>
+<p>Github :  <a href="https://github.com/guangmujun" target="_blank">https://github.com/guangmujun</a></p>
+<p>CSDN :   <a href="https://me.csdn.net/qq_37054356" target="_blank">https://me.csdn.net/qq_37054356</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Python学习">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../part1_other/" class="navigation navigation-next " aria-label="Next page: 其他学习">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Pyinstaller打包程序","level":"2.1.1","depth":2,"next":{"title":"其他学习","level":"2.2","depth":1,"path":"part1_other/README.md","ref":"part1_other/README.md","articles":[{"title":"GitBook使用教程","level":"2.2.1","depth":2,"path":"part1_other/gitbook.md","ref":"part1_other/gitbook.md","articles":[]}]},"previous":{"title":"Python学习","level":"2.1","depth":1,"path":"part1_python/README.md","ref":"part1_python/README.md","articles":[{"title":"Pyinstaller打包程序","level":"2.1.1","depth":2,"path":"part1_python/pyinstaller.md","ref":"part1_python/pyinstaller.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part1_python/pyinstaller.md","mtime":"2019-07-09T11:48:07.059Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-09T12:22:39.114Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
