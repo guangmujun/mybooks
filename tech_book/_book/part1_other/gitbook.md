@@ -30,7 +30,7 @@
 
 ## 二级标题
 
-![1562673657738](E:\GitHub\mybooks\tech_book\imgs\1562673657738.png)
+![1562673657738](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/1562673657738.png)
 
 效果如图
 
@@ -44,13 +44,13 @@
 
 1. 先在目录下新建part1和part2文件夹，part1用于存放“Python学习”，part2存放"ML"
 
-   ![1562673921167](E:\GitHub\mybooks\tech_book\imgs\1562673921167.png)
+   ![1562673921167](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/1562673921167.png)
 
 2. 修改SUMMARY.md内容
 
-   ![1562674023664](E:\GitHub\mybooks\tech_book\imgs\1562674023664.png)
+   ![1562674023664](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/1562674023664.png)
 
-![1562674068128](E:\GitHub\mybooks\tech_book\imgs\1562674068128.png)
+![1562674068128](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/1562674068128.png)
 
 3. 在part1文件夹下创建README.md和pyinstaller.md文件，其中：
 
@@ -58,11 +58,11 @@
 
    点击“Pyinstaller打包程序”则展示pyinstaller.md中的内容
 
-   ![1562674142161](E:\GitHub\mybooks\tech_book\imgs\1562674142161.png)
+   ![1562674142161](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/1562674142161.png)
 
 4. 在SUMMARY.md中正常加入标题，就可实现用于分割的灰色标题
 
-   ![1562674298922](E:\GitHub\mybooks\tech_book\imgs\1562674298922.png)
+   ![1562674298922](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/1562674298922.png)
 
 ## 问题
 
