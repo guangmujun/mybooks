@@ -1,4 +1,4 @@
-# 快速使用GitBook
+# 快速使用GitBook以及二级标题的设置
 
 ## 安装
 
@@ -80,6 +80,14 @@ ENOENT: no such file or directory, stat 'E:\GitHub\mybooks\tech_book\_book\part1
 gitbook build
 gitbook serve
 ```
+
+
+
+## 视频教程
+
+GitBook快速使用教程：https://www.bilibili.com/video/av58871992
+
+GitBook二级标题设置教程：https://www.bilibili.com/video/av58873387
 
 
 
