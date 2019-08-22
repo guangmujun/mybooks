@@ -12,9 +12,9 @@
 
    在shapely库文件目录下，找到geos_c.dll文件，将其复制一份重命名为geos.dll
 
-   目录：``E:\GitHub\ForExe\venv\Lib\site-packages\shapely\DLLs``![Screenshot_1](E:\GitHub\mybooks\tech_book\imgs\Screenshot_1.jpg)
+   目录：``E:\GitHub\ForExe\venv\Lib\site-packages\shapely\DLLs``![Screenshot_1](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/Screenshot_1.jpg)
 
-   ![Screenshot_2](E:\GitHub\mybooks\tech_book\imgs\Screenshot_2.jpg)
+   ![Screenshot_2](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/Screenshot_2.jpg)
 
 2. **pyproj**库相关
 
@@ -34,7 +34,7 @@
 
    即可正确安装pyproj库
 
-   ![1566438904431](E:\GitHub\mybooks\tech_book\imgs\1566438904431.png)
+   ![1566438904431](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/1566438904431.png)
 
 3. **numpy**相关
 
@@ -54,7 +54,7 @@
    hiddenimports=['numpy.random.common','numpy.random.bounded_integers','numpy.random.entropy']
    ```
 
-   ![Screenshot_3](E:\GitHub\mybooks\tech_book\imgs\Screenshot_3.jpg)
+   ![Screenshot_3](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/Screenshot_3.jpg)
 
    方法二：
 
