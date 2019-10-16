@@ -61,9 +61,9 @@ Python 代码要想执行，机器上必须有一个 Python 解释器，也就�
 
    ![1571148943917](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/1571148943917.png)
 
-5. 这样下来，你写的所有 Python 程序都可以放在这里，免去别人安装各种软件和依赖的麻烦，别人解压你的提供的压缩包，双击 startup.bat 即可运行，不需要任何额外的配置，简单易行，不懂技术的小白也可以使用。
+5. 这样下来，你写的所有 Python 程序都可以放在这里，免去别人安装各种软件和依赖的麻烦，别人解压你的提供的压缩包，双击 startup.bat 即可运行，不需要任何额外的配置，简单易行。
 
-   ![1571149401050](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/1571149401050.png) 
+   ![1571191955501](https://github.com/guangmujun/mybooks/blob/master/tech_book/imgs/1571191955501.png)
 
 6. 可考虑在项目中直接调用Python解释器运行启动文件如（test.py），或考虑打包出小的exe。
 
@@ -121,7 +121,7 @@ setup(
 
   ![1571152762411](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/1571152762411.png)
 
-  ![1571153073656](E:\GitHub\mybooks\tech_book\imgs\1571153073656.png)
+  ![1571153073656](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/1571153073656.png)
 
 - 将pyd文件之外的新生成文件删除，以及删除my_test.py，运行启动文件app.py，程序中从我们写的my_test库中引入自定义的函数my_print。
 
