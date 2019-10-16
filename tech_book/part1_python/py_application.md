@@ -40,7 +40,7 @@ Python 代码要想执行，机器上必须有一个 Python 解释器，也就�
 
 1. 官网下载选择``embeddable zip``类型的python压缩包（体积很小，python3.6.0的只有6.6MB）
 
-![1571124337745](E:\GitHub\mybooks\tech_book\imgs\1571124337745.png)
+![1571124337745](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/1571124337745.png)
 
 2. 写好 Python 代码后，将 Python 源代码和 python-x.x.x-embed-amd64 文件夹放在一起，再提供一个 startup.bat 文件，写入以下内容： 
 
@@ -51,19 +51,19 @@ Python 代码要想执行，机器上必须有一个 Python 解释器，也就�
 
    文件夹目录和代码图：
 
-   ![1571148487995](E:\GitHub\mybooks\tech_book\imgs\1571148487995.png)
+   ![1571148487995](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/1571148487995.png)
 
 3. 双击 startup.bat 即可运行你提供的 Python 程序。如果代码中使用第三方的库。则需要修改 python-3.7.4-embed-amd64 目录下的 python37._pth 文件，把最后一行的注释去掉，文件内容应该是这样的： 
 
-   ![1571148687563](E:\GitHub\mybooks\tech_book\imgs\1571148687563.png)
+   ![1571148687563](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/1571148687563.png)
 
 4. 然后将同版本 Python pip 安装后的包从 site-packages 复制到 python-x.x.x-embed-amd64\Lib\site-packages 即可,需要自己新建名为Lib和site-packages的文件夹。
 
-   ![1571148943917](E:\GitHub\mybooks\tech_book\imgs\1571148943917.png)
+   ![1571148943917](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/1571148943917.png)
 
 5. 这样下来，你写的所有 Python 程序都可以放在这里，免去别人安装各种软件和依赖的麻烦，别人解压你的提供的压缩包，双击 startup.bat 即可运行，不需要任何额外的配置，简单易行，不懂技术的小白也可以使用。
 
-   ![1571149401050](E:\GitHub\mybooks\tech_book\imgs\1571149401050.png) 
+   ![1571149401050](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/1571149401050.png) 
 
 6. 可考虑在项目中直接调用Python解释器运行启动文件如（test.py），或考虑打包出小的exe。
 
@@ -115,21 +115,21 @@ setup(
 
 以第2种方法**举个栗子**：
 
-- 文件夹目录下文件如图，新建函数文件``my_test.py``、编译文件``setup.py``、启动文件``app.py``![1571152549814](E:\GitHub\mybooks\tech_book\imgs\1571152549814.png)![1571152580055](E:\GitHub\mybooks\tech_book\imgs\1571152580055.png)
+- 文件夹目录下文件如图，新建函数文件``my_test.py``、编译文件``setup.py``、启动文件``app.py``![1571152549814](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/1571152549814.png)![1571152580055](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/1571152580055.png)
 
 - 在目录内执行 python setup.py 即可将 my_test.py 编译成对应的 pyd ，并安装在 Python 的库目录 site-packages 中，并将pyd文件复制到前述所在的文件夹目录中，如图。
 
-  ![1571152762411](E:\GitHub\mybooks\tech_book\imgs\1571152762411.png)
+  ![1571152762411](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/1571152762411.png)
 
   ![1571153073656](E:\GitHub\mybooks\tech_book\imgs\1571153073656.png)
 
 - 将pyd文件之外的新生成文件删除，以及删除my_test.py，运行启动文件app.py，程序中从我们写的my_test库中引入自定义的函数my_print。
 
-  ![1571153153456](E:\GitHub\mybooks\tech_book\imgs\1571153153456.png)
+  ![1571153153456](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/1571153153456.png)
 
 - 运行成功，我们自定义的函数被编译成pyd文件保护起来。
 
-  ![1571153277115](E:\GitHub\mybooks\tech_book\imgs\1571153277115.png)
+  ![1571153277115](https://raw.githubusercontent.com/guangmujun/mybooks/master/tech_book/imgs/1571153277115.png)
 
 ## 遇到问题
 
